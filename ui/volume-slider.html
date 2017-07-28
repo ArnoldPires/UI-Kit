@@ -1,1 +1,28 @@
-<h1>Testing Testing</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>volume-slider</title>
+    <link rel="stylesheet" href="../css/volume-slider.css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>VolumeslideR</h1>
+      <p>Sylvan LaCue - Grateful</p>
+      <div class="video-wrap">
+        <img src="../img/sylvanlacue.png"/>
+          <video class="video">
+            <source src="../img/grateful.mp4" type="video/mp4">
+          </video>
+          <div class="controls">
+            <input type="button" value="Play" class="play">
+            <input type="button" value="Pause" class="pause">
+            <input class="volume" type="range" min="0" max="100" value="50" step=".1" />
+          </div>
+        </div>
+    </div>
+  <script type="text/javascript" src="../js/volume-slider.js"></script>
+  </body>
+</html>
