@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+a:link {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.25s;
+}
+a:visited,
+a:link:hover,
+a:visited:hover {
+  text-decoration: none;
+}
+body {
+  background: #e0e0e0;
+  color: #444;
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: normal;
+}
+.container {
+  background: #fff;
+  max-width: 920px;
+  margin: 4% auto;
+  padding: 20px;
+  font-family: 'Oxygen', sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+}
+h1 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+  -webkit-animation:colorchange 10s infinite alternate;
+}
+@-webkit-keyframes colorchange{
+  0% {
+    color: #2574A9;
+  }
+  10% {
+    color: #19B5FE;
+  }
+  20% {
+    color: #26A65B;
+  }
+  30% {
+    color: #3FC380;
+  }
+  40% {
+    color: #1BA39C;
+  }
+  50% {
+    color: #BDC3C7;
+  }
+  60% {
+    color: #F7CA18;
+  }
+  70% {
+    color: #F4B350;
+  }
+  80% {
+    color: #D91E18;
+  }
+  90% {
+    color: #BF55EC;
+  }
+  100% {
+    color: #740A4E;
+  }
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#color-container ul.color-selection {
+  position: relative;
+  display: table;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  margin: auto;
+  position: relative;
+  padding: 0
+}
+#color-container ul.color-selection li {
+  position: relative;
+  display: flex;
+  float: left;
+  width: 25%;
+  min-height: 160px;
+  padding: 4%;
+  list-style: none;
+  background: #444;
+  border-radius: 50px;
+  text-align: center;
+  font-family: inherit;
+  color: rgba(255, 255, 255, );
+  font-size: 1.1rem;
+  margin: auto;
+  font-weight: 700;
+  backface-visibility: hidden;
+  transition: all .3s cubic-bezier(1, 0.015, 0.295, 1.225)
+}
+#color-container ul.color-selection li:hover {
+  z-index: 4
+}
+#color-container ul.color-selection li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: ;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.4)
+}
+#color-container ul.color-selection li:hover:before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0)
+}
+#color-container ul.color-selection li:after {
+  content: 'Salin kode warna';
+  display: block;
+  position: absolute;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: .8rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  color: rgba(255, 255, 255, .5);
+  font-weight: 700;
+  visibility: hidden;
+  transform: translate(0, 30px);
+  transition: all .3s cubic-bezier(1, 0.015, 0.295, 1.225);
+  transition-delay: .1s
+}
+#color-container ul.color-selection li:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  z-index: 1;
+  transition-delay: .8s
+}
+#color-container ul.color-selection li .color {
+  width: 100%;
+  padding: 0;
+  display: block;
+  float: none;
+  margin: auto;
+  clear: both;
+  z-index: 3
+}
+#color-container ul.color-selection li .color-name {
+  width: 100%;
+  padding: 0;
+  display: block;
+  float: none;
+  margin: 0 auto 10px auto;
+  font-weight: 400;
+  font-size: 20px;
+  clear: both;
+  z-index: 3
+}
+@media screen and (max-width:800px) {
+  #color-container ul.color-selection li {
+    width: 33.3%;
+    line-height: normal
+  }
+}
+@media screen and (max-width:640px) {
+  #color-container ul.color-selection li {
+    width: 50%
+  }
+}
+@media screen and (max-width:480px) {
+  #color-container ul.color-selection li {
+    width: 100%
+  }
+}
