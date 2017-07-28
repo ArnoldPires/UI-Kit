@@ -1,16 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
-a:link {
-  text-decoration: none;
-  outline: none;
-  transition: all 0.25s;
-}
-a:visited,
-a:link:hover,
-a:visited:hover {
-  text-decoration: none;
-}
 body {
-  background: #e0e0e0;
+  background: #b0bec5;
   color: #444;
   font-family: 'Oxygen', sans-serif;
   margin: 0;
