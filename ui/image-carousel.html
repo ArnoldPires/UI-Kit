@@ -6,23 +6,45 @@
     <link rel="stylesheet" href="../css/image-carousel.css">
   </head>
   <body>
-    <div class="container">
-    <section class="carousel-outer">
-      <a class="previousLink" href="#"></a>
-      <section class="carousel-inner">
-        <a href="#" class="image-shown"><img src="https://www.cicis.com/media/1138/pizza_trad_pepperoni.png"></a>
-        <a href="#" class="image-hidden"><img  src="https://img.grouponcdn.com/deal/8DDtq5XRzVnLXEUnPHPd/p2-2048x1229/v1/c700x420.jpg"></a>
-        <a href="#" class="image-hidden"><img  src="https://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png"></a>
-        <a href="#" class="image-hidden"><img  src="https://eatpizzafresca.com/images/pepperoni_pizza.jpg?crc=4023861219"></a>
-        <a href="#" class="image-hidden"><img  src="http://a57.foxnews.com/images.foxnews.com/content/fox-news/food-drink/2017/04/05/homeless-man-issued-citation-for-eating-pizza-at-bus-stop/_jcr_content/par/featured-media/media-0.img.jpg/876/493/1491338724711.jpg?ve=1&tl=1"></a>
-        <a href="#" class="image-hidden"><img  src="images/yellow.png"></a>
-      </section>
-  <button class="previousLink" href="#">Back</button>
-  <button class="nextLink" href="#">Forward</button>
-
-
-
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <div class="slider">
+  <div class="slide active image1" id="slide1">
+    <div class="slide_content">
+      <span>Welcome to Upham Corner!</span>
+    </div>
+  </div>
+  <div class="slide image2" id="slide2">
+    <div class="slide_content">
+      <span>The first settlers of Dorchester in 1630 initially lived in the Uphams Corner neighborhood in the vicinity of Edward Everett Square. </span>
+    </div>
+  </div>
+  <div class="slide image3" id="slide3">
+    <div class="slide_content">
+      <span>The oldest surviving, man-made site in this area is Dorchester's North Burying Ground at the corner of Columbia Road and Stoughton Street.</span>
+    </div>
+  </div>
+  <div class="slider_nav">
+    <a class="slideBtn active" data-slide-target="1" href="#slide1">•</a>
+    <a class="slideBtn" data-slide-target="2" href="#slide2">•</a>
+    <a class="slideBtn" data-slide-target="3" href="#slide3">•</a>
+  </div>
+  <a class="secondary_nav backBtn"></a>
+  <a class="secondary_nav fwdBtn"></a>
+</div>
+<section>
+  <h1>Hover over an image to pause</h1>
+	<div id="wrapper">
+		<div id="image">
+			<div class="image i1"><img src="https://georgespigot.files.wordpress.com/2012/05/judge-dredd-comic-01.jpg"></div>
+			<div class="image i2"><img src="https://images.amcnetworks.com/ifc.com/wp-content/uploads/2012/09/judge-dredd-620x375.jpg"></div>
+			<div class="image i3"><img src="http://geekandsundry.com/wp-content/uploads/2017/02/dredd-banner.png"></div>
+			<div class="image i4"><img src="https://screenrant0.imgix.net/wp-content/uploads/Judge-Dredd-The-Dark-Judges-Miniseries.jpg?auto=format&lossless=1&q=90&w=620&h=320&fit=crop"></div>
+			<div class="image i5"><img src="http://www.dreadcentral.com/wp-content/uploads/2016/10/judge-death2-1.jpg"></div>
+			<div class="image i6"><img src="http://www.ryanbrown-art.com/wp-content/gallery/Portfolio-1/mean_vs_judge_anderson_by_ryanbrown_colour-d874pko.jpg"></div>
+			<div class="image i7"><img src="http://fingerguns.net/wp-content/uploads/2017/05/judge-dredd-vs-mars-attacks.jpg"></div>
+			<div class="image i8"><img src="https://2000ad.files.wordpress.com/2016/08/2481315-2481314-img_2426-jpg.png?w=627"></div>
+		</div>
+	</div>
+</section>
   <script src="../js/image-carousel.js"></script>
 </body>
 </html>

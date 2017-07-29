@@ -1,37 +1,64 @@
-$(document).ready(function(){
+var btns = document.querySelectorAll(".slideBtn");
+var backBtn = document.querySelector(".backBtn");
+var fwdBtn = document.querySelector(".fwdBtn");
+var slides = document.querySelectorAll(".slide");
 
-function nextLinkClicked() {
-    var currentActiveImage = $(".image-shown");
-    var nextActiveImage = currentActiveImage.next();
-
-    if(nextActiveImage.length == 0)
-    {
-      nextActiveImage = $(".carousel-inner a").first();
-    }
-
-    currentActiveImage.removeClass("image-shown").addClass("image-hidden");
-    nextActiveImage.addClass("image-shown").removeClass("image-hidden");
-    $(".carousel-inner a").not([currentActiveImage, nextActiveImage]);
+var activeSlide = 0;
+function advanceSlides(count) {
+  if (!count) {
+    count = 1;
   }
+  activeSlide = activeSlide + count;
+  if (activeSlide == slides.length) {
+    activeSlide = 0;
+  }
+  if (activeSlide < 0) {
+    activeSlide = slides.length - 1;
+  }
+  showSlide(activeSlide);
+}
 
-  $(".nextLink").on("click", function(e){
+function showSlide(slideIndex) {
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+    btns[i].classList.remove("active");
+  }
+  btns[slideIndex].classList.add("active");
+  slides[slideIndex].classList.add("active");
 
-    nextLinkClicked();
+}
 
-    e.preventDefault();
+var handleClick = function(evt) {
+  var slideNumber = evt.target.getAttribute("data-slide-target");
+  var slideIndex = slideNumber - 1;
+  //if this is the first click stop the auto slide
+  if (intervalId) {
+    window.clearInterval(intervalId);
+  }
+  showSlide(slideIndex);
+  return false;
+};
 
-  });
+var fwdClick = function(evt) {
+  if (intervalId) {
+    window.clearInterval(intervalId);
+  }
+  advanceSlides();
+};
 
-  $(".previousLink").on("click", function(e){
-    var currentActiveImage = $(".image-shown");
-    var nextActiveImage = currentActiveImage.prev();
-    if(nextActiveImage.length == 0){
-      nextActiveImage = $(".carousel-inner a").last();
-    }
-    currentActiveImage.removeClass("image-shown").addClass("image-hidden");
-    nextActiveImage.addClass("image-shown").removeClass("image-hidden");
-    $(".carousel-inner a").not([currentActiveImage, nextActiveImage]);
-    e.preventDefault();
-  });
+var backClick = function(evt) {
+  if (intervalId) {
+    window.clearInterval(intervalId);
+  }
+  advanceSlides(-1);
+};
 
-});
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", handleClick);
+}
+
+backBtn.addEventListener("click", backClick);
+fwdBtn.addEventListener("click", fwdClick);
+
+//start slider
+var intervalId = window.setInterval(advanceSlides, 3000);
