@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-size: 100%;
+  background: #b0bec5;
 }
 .slider {
   position: relative;
@@ -106,7 +107,11 @@ body {
   background-image: url("../img/uphamscorner3.jpg");
 }
 h1 {
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+  font-weight: bold;
+  font-size: 100px;
 }
 #wrapper {
 	width: 960px;
