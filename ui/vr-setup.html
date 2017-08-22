@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basic VR-setup</title>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+        <a-mixin id="text"
+          text="align: left; height: 8;"
+        </a-mixin>
+      </a-assets>
+
+      <a-entity mixin="text" position="-0.604 2.188 -2.170"
+                text="anchor: left; width: 10.5; color: #BF55EC; value: Basic VR Setup!">
+      </a-entity>
+
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#1F3A93"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#D91E18"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#EB9532"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#1BA39C"></a-plane>
+      <a-sky color="#C5EFF7"></a-sky>
+      <a-entity scale="2 2 2" geometry="primitive:torusKnot" position="3.46 6 -10" material="color:magenta;metalness:1;roughness:0.1;sphericalEnvMap:#sky" rotation="0 0 60.59934000007343">
+        <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
