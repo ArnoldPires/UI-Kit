@@ -18,7 +18,7 @@ List of UI elements/ functionalities that will be included:
 14. Responsive Nav bar
 15. An image, when clicked opens up another overlaying image
 16. Common footer sections on sites
-17 .Netflix api
+17. Netflix api
 18. Twitter, facebook, instagram, and google maps api
 19. Chat box UI
 20. Calendar UI
@@ -48,5 +48,6 @@ List of UI elements/ functionalities that will be included:
 44. How to say Hello world in a bunch of different languages
 45. Moving objects across the screen with the arrow keys
 46. 360 pictures 
+47. Popup windows
 And maybe more  
  
