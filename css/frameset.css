@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+.Top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    font-size: 3rem;
+    position: relative;
+    z-index: 10;
+    height: 100px;
+}
+.Container {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: -100px;
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
+    padding: 100px;
+}
+.Left,
+.Middle,
+.Right {
+    overflow: auto;
+    height: auto;
+    padding: .5rem;
+}
+.Left::-webkit-scrollbar,
+.Middle::-webkit-scrollbar,
+.Right::-webkit-scrollbar {
+    display: none;
+}
+.Left {
+    width: 12.5rem;
+    background-color: orange;
+}
+
+.Middle {
+    flex: 1;
+}
+
+.Right {
+    width: 12.5rem;
+    background-color: blue;
+}
+
+
+
+#myDIV {
+  width: 100%;
+  text-align: center;
+  resize: vertical;
+}
+button {
+  background-color: #5588EE;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 20px;
+  height: 100px;
+  width: 200px;
+}
+.click {
+  text-align: center;
+}
