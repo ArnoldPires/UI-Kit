@@ -38,11 +38,6 @@ body {
     height: auto;
     padding: .5rem;
 }
-.Left::-webkit-scrollbar,
-.Middle::-webkit-scrollbar,
-.Right::-webkit-scrollbar {
-    display: none;
-}
 .Left {
     width: 12.5rem;
     background-color: orange;
@@ -58,11 +53,18 @@ body {
 }
 
 
-
 #myDIV {
+  display: none;
   width: 100%;
+  height: 600px;
   text-align: center;
-  resize: vertical;
+  resize:vertical;
+  overflow: auto;
+  border: 5px solid;
+  padding: 20px;
+}
+.click {
+  text-align: center;
 }
 button {
   background-color: #5588EE;
@@ -72,6 +74,37 @@ button {
   height: 100px;
   width: 200px;
 }
-.click {
-  text-align: center;
+p {
+  ;
+}
+button:hover + p {
+  display: block;
+}
+
+
+
+
+.container2 {
+    border: 1px brown solid;
+    width: 300px;
+}
+
+.resizable {
+    overflow: hidden;
+}
+
+.resizable-top {
+    background-color: coral;
+}
+
+.resizable-bottom {
+    background-color: lightblue;
+}
+
+.ui-resizable-s {
+    cursor: s-resize;
+    height: 16px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
 }

@@ -6,3 +6,21 @@ function myFunction() {
         x.style.display = "none";
     }
 }
+
+$(function() {
+    var bottomElem = $(".resizable-bottom");
+    var bottomElemOriginalHeight = bottomElem.height();
+    $(".resizable-top").resizable({
+        handles: 's',
+        resize: function(event, ui) {
+            bottomElem.height(bottomElemOriginalHeight - (ui.element.outerHeight() - ui.originalSize.height));
+
+        },
+        stop: function(event, ui) {
+            bottomElemOriginalHeight = bottomElem.height();
+        },
+        //This has the effect of minHeight for bottomElem
+        maxHeight: $(".resizable-top").height()
+
+    });
+});
