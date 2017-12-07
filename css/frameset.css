@@ -75,36 +75,8 @@ button {
   width: 200px;
 }
 p {
-  ;
+  display: none;
 }
 button:hover + p {
   display: block;
-}
-
-
-
-
-.container2 {
-    border: 1px brown solid;
-    width: 300px;
-}
-
-.resizable {
-    overflow: hidden;
-}
-
-.resizable-top {
-    background-color: coral;
-}
-
-.resizable-bottom {
-    background-color: lightblue;
-}
-
-.ui-resizable-s {
-    cursor: s-resize;
-    height: 16px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
 }
