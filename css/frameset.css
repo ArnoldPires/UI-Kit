@@ -80,3 +80,17 @@ p {
 button:hover + p {
   display: block;
 }
+
+
+.ui-resizable-helper {
+    border: 1px dotted #999;
+}
+#resize {
+    background-color: #ccc;
+}
+.demodiv {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-left: 5px;
+}

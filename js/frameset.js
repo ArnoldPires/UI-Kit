@@ -9,6 +9,7 @@ function myFunction() {
 
 $(function() {
     var bottomElem = $(".resizable-bottom");
+    var resizable = $(".resizable-top");
     var bottomElemOriginalHeight = bottomElem.height();
     $(".resizable-top").resizable({
         handles: 's',
