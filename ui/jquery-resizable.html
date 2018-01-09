@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Split.js</title>
+  <style>
+  .splits {
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .splits {
+    height: 400px;
+  }
+  .split p {
+    padding: 20px;
+  }
+  .split {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .gutter {
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .gutter.gutter-horizontal {
+    cursor: ew-resize;
+  }
+  .gutter.gutter-vertical {
+    cursor: ns-resize;
+  }
+  .split.split-horizontal, .gutter.gutter-horizontal {
+    height: 100%;
+    float: left;
+  }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <p>Nested splits, horizontal and vertical.</p>
+                <pre><code>Split(['#ten', '#eleven']);
+
+Split(['#twelve', '#thirteen'], {
+    direction: 'vertical'
+});</code></pre>
+          <div class="splits">
+
+            <div id="a" class="split split-horizontal">
+              <div id="a1" class="split split-vertical">
+                <p>Bacon ipsum dolor amet beef ribs meatloaf picanha pork loin pork chop rump pig sausage bacon shank boudin beef fatback. Pork loin turducken t-bone chicken.</p>
+              </div>
+              <div id="a2" class="split split-vertical">
+                <p>Bacon ipsum dolor amet beef ribs meatloaf picanha pork loin pork chop rump pig sausage bacon shank boudin beef fatback. Pork loin turducken t-bone chicken.</p>
+              </div>
+            </div>
+
+            <div id="b" class="split split-horizontal">
+              <p>Brisket andouille cow ball tip. Ham ground round short loin tri-tip ribeye t-bone boudin, pork loin turkey drumstick tongue pork chop. Kielbasa doner picanha turducken, swine bacon shank pastrami andouille.</p>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="https://nathancahill.github.io/Split.js/split.js"></script>
+<script>
+    Split(['#a', '#b']);
+    Split(['#a1', '#a2'], {
+        direction: 'vertical'
+    });
+</script>
+</html>

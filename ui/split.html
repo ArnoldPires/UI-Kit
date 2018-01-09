@@ -6,34 +6,53 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 </head>
 <body>
+
     <div id="a" class="split split-horizontal">
-      <div id="c" class="split content"></div>
-      <div id="d" class="split content"></div>
+      <div id="a1" class="split content">
+        <div class="red"></div>
+      </div>
     </div>
+
     <div id="b" class="split split-horizontal">
-      <div id="e" class="split content"></div>
-      <div id="f" class="split content"></div>
+      <div id="b1" class="split content">
+      <div class="purple"></div>
+      </div>
     </div>
+
+    <div id="c" class="split split-vertical">
+      <div id="c1" class="split content">
+      <div class="blue"></div>
+    </div>
+    </div>
+
 </body>
 <script src="https://nathancahill.github.io/Split.js/split.js"></script>
 <script>
-    Split(['#a', '#b'], {
+    Split(['#a', '#b', '#c'], {
       gutterSize: 8,
       cursor: 'col-resize'
     })
 
-    Split(['#c', '#d'], {
+    Split(['#a1'], {
       direction: 'vertical',
-      sizes: [25, 75],
+      sizes: [60],
       gutterSize: 8,
       cursor: 'row-resize'
     })
 
-    Split(['#e', '#f'], {
+    Split(['#b1'], {
       direction: 'vertical',
-      sizes: [25, 75],
+      sizes: [60],
       gutterSize: 8,
       cursor: 'row-resize'
     })
+
+    Split(['#c1'], {
+      direction: 'horizontal',
+      sizes: [60],
+      gutterSize: 8,
+      cursor: 'row-resize'
+    })
+
 </script>
 </html>
