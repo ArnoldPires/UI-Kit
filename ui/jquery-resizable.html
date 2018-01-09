@@ -10,7 +10,7 @@
   }
 
   .splits {
-    height: 400px;
+    height: 840px;
   }
   .split p {
     padding: 20px;
@@ -41,25 +41,16 @@
 </head>
 <body>
     <div class="container">
-        <p>Nested splits, horizontal and vertical.</p>
-                <pre><code>Split(['#ten', '#eleven']);
-
-Split(['#twelve', '#thirteen'], {
-    direction: 'vertical'
-});</code></pre>
           <div class="splits">
 
-            <div id="a" class="split split-horizontal">
-              <div id="a1" class="split split-vertical">
-                <p>Bacon ipsum dolor amet beef ribs meatloaf picanha pork loin pork chop rump pig sausage bacon shank boudin beef fatback. Pork loin turducken t-bone chicken.</p>
-              </div>
-              <div id="a2" class="split split-vertical">
-                <p>Bacon ipsum dolor amet beef ribs meatloaf picanha pork loin pork chop rump pig sausage bacon shank boudin beef fatback. Pork loin turducken t-bone chicken.</p>
-              </div>
-            </div>
+            <div id="a" class="split split-horizontal"></div>
 
             <div id="b" class="split split-horizontal">
-              <p>Brisket andouille cow ball tip. Ham ground round short loin tri-tip ribeye t-bone boudin, pork loin turkey drumstick tongue pork chop. Kielbasa doner picanha turducken, swine bacon shank pastrami andouille.</p>
+            <div id="b1" class="split split-vertical">
+              <p>Bacon ipsum dolor amet beef ribs meatloaf picanha pork loin pork chop rump pig sausage bacon shank boudin beef fatback. Pork loin turducken t-bone chicken.</p>
+            </div>
+            <div id="b2" class="split split-vertical">
+              <p>Bacon ipsum dolor amet beef ribs meatloaf picanha pork loin pork chop rump pig sausage bacon shank boudin beef fatback. Pork loin turducken t-bone chicken.</p>
             </div>
           </div>
 
@@ -70,7 +61,7 @@ Split(['#twelve', '#thirteen'], {
 <script src="https://nathancahill.github.io/Split.js/split.js"></script>
 <script>
     Split(['#a', '#b']);
-    Split(['#a1', '#a2'], {
+    Split(['#b1', '#b2'], {
         direction: 'vertical'
     });
 </script>
