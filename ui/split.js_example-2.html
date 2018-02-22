@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>splits-2</title>
+</head>
+<body>
+<style>
+.example-4{
+  height: 450px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gutter {
+  background-color: #eee;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  cursor: ew-resize;
+}
+
+.gutter.gutter-vertical {
+  cursor: ns-resize;
+}
+
+.split.split-horizontal, .gutter.gutter-horizontal {
+  height: 100%;
+  float: left;
+}
+</style>
+<div class="example-4">
+            <div id="a" class="split split-vertical">
+              <p>#a</p>
+            </div>
+
+            <div id="b" class="split split-vertical">
+
+              <div id="b1" class="split split-horizontal">
+                <p>#b1</p>
+              </div>
+
+              <div id="b2" class="split split-horizontal">
+                <p>#b2</p>
+              </div>
+
+            </div>
+          </div>
+
+</body>
+<script src="https://nathancahill.github.io/Split.js/split.js"></script>
+<script>
+Split(['#a', '#b'], {
+  direction: 'vertical'
+});
+
+Split(['#b1', '#b2'], {
+  direction: 'horizontal'
+  });
+</script>
+</html>
