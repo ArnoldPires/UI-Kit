@@ -1,7 +1,7 @@
 const geometry = new THREE.BoxGeometry( 10, 10, 10 );
 
 
-/** Elements that aren't the focus of the example */
+/** Elements that aren't the focus of the example. This code below always stays the same */
 const scene = new THREE.Scene();
 
 scene.background = new THREE.Color(0x282c34);
