@@ -1,5 +1,5 @@
 # UI-Kit
-This will be a collection of different UI exmaples that can be later pulled from.
+This will be a collection of different UI examaples that can be later pulled from.
 List of UI elements/ functionalities that will be included:
 
 1. Volume Slider
