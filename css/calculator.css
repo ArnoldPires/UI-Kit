@@ -1,7 +1,7 @@
 body {
   width: 500px;
   margin: 4% auto;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 5px;
   font-size: 1.8rem;
   -moz-user-select: none;
@@ -26,7 +26,7 @@ body {
   margin-right: 6px;
   font-size: 2.5rem;
   overflow-x: auto;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .input:hover {
@@ -35,21 +35,24 @@ body {
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-.buttons {}
+.buttons {
+}
 
-.operators {}
+.operators {
+}
 
 .operators div {
   display: inline-block;
   border: 1px solid #bbb;
   border-radius: 1px;
-  width: 80px;
+  width: 79px;
   text-align: center;
   padding: 10px;
   margin: 20px 4px 10px 0;
   cursor: pointer;
   background-color: #ddd;
-  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .operators div:hover {
@@ -77,7 +80,8 @@ body {
   margin: 10px 4px 10px 0;
   cursor: pointer;
   background-color: #f9f9f9;
-  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .numbers div:hover {
@@ -93,7 +97,7 @@ body {
 
 div.equal {
   display: inline-block;
-  border: 1px solid #3079ED;
+  border: 1px solid #3079ed;
   border-radius: 1px;
   width: 17%;
   text-align: center;
@@ -101,17 +105,17 @@ div.equal {
   margin: 10px 6px 10px 0;
   vertical-align: top;
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   background-color: #4d90fe;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   float: right;
 }
 
 div.equal:hover {
-  background-color: #307CF9;
+  background-color: #307cf9;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #1857BB;
+  border-color: #1857bb;
 }
 
 div.equal:active {
