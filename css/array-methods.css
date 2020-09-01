@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9fafb;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+}
