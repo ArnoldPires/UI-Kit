@@ -1,0 +1,68 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+body {
+ background-color: #a075ab;
+}
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#gallery a {
+	margin-bottom: 25px;
+	position: relative;
+	box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+}
+#gallery a img {
+	display: block;
+	transition: all 0.5s;
+    padding: 1rem;
+}
+/*Hover effects*/
+#gallery a img:hover {
+	filter: none; /*Returns to default state*/
+}
+.title {
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	padding: 5px 7px;
+	background: rgba(0, 0, 0, 0.6);
+}
+.grayscale {
+    filter: grayscale(500%);
+}
+.contrast {
+    filter: contrast(390%);
+}
+.blur {
+    filter: blur(10px);
+}
+.invert {
+    filter: invert(100%);
+}
+.opacity {
+    filter: opacity(20%);
+}
