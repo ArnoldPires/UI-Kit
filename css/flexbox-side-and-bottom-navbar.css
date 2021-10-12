@@ -1,0 +1,35 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+main {
+    overflow-y: auto;
+}
+li {
+    color: red;
+}
+aside {
+    border-right: 1px solid #ededed;
+    background: #36c;
+    flex: 1 0 10%;
+    padding: 1rem;
+}
+.wrapper {
+    display: flex;
+    height: 100%;
+}
+@media (max-width: 500px) {
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .wrapper_inner {
+        width: 90%;
+        margin: 0px auto;
+    }
+}
