@@ -13,7 +13,7 @@ List of UI elements/ functionalities that will be included:
 8. <a href="https://arnaldopires.com/UI-Kit/ui/image-carousel.html">Image carousel</a>
 9. <a href="https://arnaldopires.com/UI-Kit/ui/flexbox-responsive-nav.html">Flexbox responsive nav</a>
 10. <a href="https://arnaldopires.com/UI-Kit/ui/calculator.html">Calculator</a>
-11. <a href="https://arnaldopires.com/UI-Kit/ui/vr-setup.html">Vr setup</a>
+11. <a href="https://arnaldopires.com/UI-Kit/ui/vr-setup.html">A-frame Vr setup</a>
 12. <a href="https://arnaldopires.com/UI-Kit/ui/frameset.html">Frameset</a>
 13. <a href="https://arnaldopires.com/UI-Kit/ui/hamburger-menu.html">Hamburger Menu</a>
 
