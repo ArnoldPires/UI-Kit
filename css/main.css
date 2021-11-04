@@ -1,25 +1,25 @@
 body {
-  background-color: lightgray;
-}
+    background-color: lightgray;
+  }
 h1, h3 {
-  text-align: center;
-}
+    text-align: center;
+  }
 .links a {
-text-decoration: none;
+  text-decoration: none;
 }
 .links ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
 .links li a img {
-  height: 230px;
-  width: 25rem;
-  object-fit: fill;
-  padding: 1rem;
-  border-radius: 40px;
-}
+    border-radius: 40px;
+    height: 230px;
+    object-fit: fill;
+    padding: 1rem;
+    width: 25rem;
+  }
