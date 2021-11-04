@@ -16,5 +16,6 @@ List of UI elements/ functionalities that will be included:
 11. <a href="https://arnaldopires.com/UI-Kit/ui/vr-setup.html">A-frame Vr setup</a>
 12. <a href="https://arnaldopires.com/UI-Kit/ui/frameset.html">Frameset</a>
 13. <a href="https://arnaldopires.com/UI-Kit/ui/hamburger-menu.html">Hamburger Menu</a>
+14. <a href="https://arnaldopires.com/UI-Kit/ui/blog-layout">Blog Layout</a>
 
 And many more

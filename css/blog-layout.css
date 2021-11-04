@@ -1,0 +1,107 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+body{
+	font-family: "Proxima-Nova-Soft", sans-serif;
+}
+.post{
+	width: 50%;
+	float: left;
+	min-height: 400px;
+	color: #ffffff;
+	display: table;
+	transition: .4s ease-in-out;
+}
+.post .inner{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 15%;
+}
+.post .title{
+	font-size: 1.75em;
+}
+.post .post_info .date, .post .post_info .read_length{
+	display: inline;
+	font-size: 1.1em;
+}
+.post .post_info .date{
+	margin-right: 1em;
+}
+.red{
+	background: #874b59;
+}
+.red:hover{
+	background: #73404c;
+}
+.red .post_info .date{
+	color: #d2adb7;
+}
+.green{
+	background: #064f49;
+}
+.green .post_info .date{
+	color: #0da699;
+}
+.green:hover{
+	background: #042f2c;
+}
+.purple{
+	background: #9386a7;
+}
+.purple .post_info .date{
+	color: #bdb5c9;
+}
+purple:hover{
+	background: #7b6b94;
+}
+.mustard{
+	background: #b38410;
+}
+.mustard .post_info .date{
+	color: #f2ce73;
+}
+.mustard:hover{
+	background: #8c680d;
+}
+/* responsive stylings */
+@media only screen and (min-width: 1600px){
+	.post{
+		width: 33.3333%;
+	}
+}
+@media only screen and (max-width: 850px){
+	.post .inner{
+		padding: 0 7.5%;
+	}
+	.post .title{
+		font-size: 1.5em;
+	}
+	.post .post_info .date, .post .post_info .read_length{
+		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 650px){
+	.post{
+		width: 100%;
+		min-height: 300px;
+	}
+	.post .title{
+		font-size: 1.375em;
+	}
+	.post .post_info .date, .post .post_info .read_length{
+		font-size: .9em
+	}
+}
