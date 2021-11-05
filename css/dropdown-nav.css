@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	background-color:#98CE00;
+	overflow-x: hidden;
+	text-align: center;
+}
+header{
+	width: 100%;
+	height: 50px;
+	background-color:turquoise;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+header > nav > section{
+	float: left;
+	width: 16.6666%;
+	height: 100%;
+	position: relative;
+}
+header > nav > section > a{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	display: block;
+	line-height: 50px;
+	color: #fbfbfb;
+	transition: background-color 0.2s ease;
+	text-transform: uppercase;
+}
+header > nav > section:hover > a{
+	background-color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+header > nav > section > div{
+	display: none;
+	overflow: hidden;
+	background-color:violet;
+	min-width: 200%;
+	position: absolute;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	padding: 10px;
+}
+header > nav > section:not(:first-of-type):not(:last-of-type) > div{
+	left: -50%;
+	border-radius: 0 0 3px 3px;
+}
+header > nav > section:first-of-type > div{
+	left: 0;
+	border-radius: 0 0 3px 0;
+}
+header > nav > section:last-of-type > div{
+	right: 0;
+	border-radius: 0 0 0 3px;
+}
+header > nav > section:hover > div{
+	display: block;
+}
+header > nav > section > div > a{
+	display: block;
+	float: left;
+	padding: 8px 10px;
+	width: 46%;
+	margin: 2%;
+	text-align: center;
+	background-color: #98CE00;
+	color: #fbfbfb;
+	border-radius: 2px;
+	transition: background-color 0.2s ease;
+}
+header > nav > section > div > a:hover{
+	background-color: #212121;
+	cursor: pointer;
+}
+@media (max-width: 600px){
+	header > nav > section > div > a{
+		margin: 5px 0;
+		width: 100%;
+	}
+	header > nav > section > a > span{
+		display: none;
+	}
+}
+h1 {
+    font-size: 5em;
+}
