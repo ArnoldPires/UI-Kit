@@ -19,4 +19,6 @@ List of UI elements/ functionalities that will be included:
 14. <a href="https://arnaldopires.com/UI-Kit/ui/blog-layout.html">Blog Layout</a>
 15. <a href="https://arnaldopires.com/UI-Kit/ui/dropdown-nav.html">Dropdown Nav</a>
 16. <a href="https://arnaldopires.com/UI-Kit/ui/pricing-table.html">Pricing Table</a>
+17. <a href="https://arnaldopires.com/UI-Kit/ui/hover-effects.html">Hover Effects</a>
+
 And many more
