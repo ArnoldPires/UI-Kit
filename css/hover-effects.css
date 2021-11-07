@@ -19,27 +19,30 @@ body {
  background-color: #a075ab;
 }
 h1 {
+    font-size: 10em;
+    margin: 0;
     text-align: center;
     color: whitesmoke;
 }
-#gallery {
+.gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-#gallery a {
-	margin-bottom: 25px;
+.gallery a {
+	margin-bottom: 10px;
 	position: relative;
 	box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
 }
-#gallery a img {
+.gallery a img {
 	display: block;
 	transition: all 0.5s;
     padding: 1rem;
+    height: 15rem;
 }
 /*Hover effects*/
-#gallery a img:hover {
+.gallery a img:hover {
 	filter: none; /*Returns to default state*/
 }
 .title {
@@ -65,4 +68,50 @@ h1 {
 }
 .opacity {
     filter: opacity(20%);
+}
+.words {
+    transition: .80s;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+}
+.caption {
+    position: relative;
+	overflow: hidden;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.caption img {
+    display: block;
+	max-width: 100%;
+}
+.caption .words {
+    position: absolute;
+	bottom: 0%;
+	width: 100%;
+	max-height: 27px;  
+}
+.caption .text {
+    color: #fff;
+	background-color: #1b1c1c;
+	font-size: 0.90em;  
+}
+.caption:hover .words {
+    max-height: 100%;
+}
+.caption:hover .words .text {
+    background-color: #1b1c1c;
+	color: #fff; 
+}
+.caption .words div {
+    display: block;
+	text-decoration: none;
+}
+.caption .text-title {
+    display: inline-block;
+	padding: 5px;
+}
+.caption .description {
+    display: block;
+	padding: 15px;  
 }
