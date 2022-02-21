@@ -102,9 +102,11 @@ body {
 }
 .image2 {
   background-image: url("../img/uphamscorner2.jpg");
+  background-position: center;
 }
 .image3 {
   background-image: url("../img/uphamscorner3.jpg");
+  background-position: bottom;
 }
 h1 {
   width: 100%;
@@ -112,6 +114,9 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 100px;
+}
+.img-hover {
+  padding: 5rem;
 }
 #wrapper {
 	width: 960px;
